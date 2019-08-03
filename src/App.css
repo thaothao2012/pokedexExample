@@ -1,33 +1,80 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.pages {
+  text-align: center;
+  background-color: #CCCCCC;
+}
+.pokemons {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.pokemon-item {
+  display: inline-flex;
+  margin: 10px;
+}
+.pokemon {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  background-color: #eee;
+}
+.pokemon-image {
+  text-align: center;
+  margin: 0px;
+  /* padding: 0px; */
+  background-repeat: no-repeat; 
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.pokemon-name {
+  position: absolute;
+  bottom: 0px;
+  background-color: #777777;
+  color: #eee;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+.page-search {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.pokemon-search {
+  width: 200px;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---------------star-css */
+.rate {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.rate > i::before {
+  content: ' \2730';
+  height: 50px;
+  width:  50px;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.star-1 i:nth-child(1){
+  color: red;
+}
+.star-2 i:nth-child(2){
+  color: red;
+}
+.star-3 i:nth-child(3){
+  color: red;
+}
+.star-4 i:nth-child(4){
+  color: red;
+}
+.star-5 i:nth-child(5){
+  color: red;
 }
